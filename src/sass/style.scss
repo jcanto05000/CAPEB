@@ -1,0 +1,175 @@
+@charset "UTF-8";
+// Variable
+@import "../bootstrap-lib/bootstrap/variables";
+@import "compass";
+
+//My theme variables
+@import "variables";
+
+// Load and hook Bootstrap Core
+@import "../bootstrap-lib/bootstrap/";
+
+
+
+
+.flaticon:before{
+	color:$couleur;
+	display: inline;
+	font-size:50px !important;
+	text-decoration:none;
+}
+
+select{
+	position:absolute;
+	top:15px;
+	right:15px;
+}
+body{
+	background-color:$couleur;
+}
+#header{
+	background-image: url('img/img/background.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	padding-top:10%;
+	padding-bottom:5%;
+	#logo{
+		margin-left:11%;
+		width:50%;
+		height:auto;
+	}
+	#texte{
+		margin-top:6%;
+		margin-left:7%;
+		margin-right:6%;
+		color:white;
+		font-weight:bold;
+		font-size:17px;
+	}
+	
+	.photoDL{
+		text-align:center;
+		img{
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+	}
+	
+	#photoIllu{
+		text-align:center;
+		img{
+			width:80%;
+			height:auto;
+		}
+	}
+}
+#email{
+	color:black;
+	text-align:center;
+	padding-top:3%;
+	font-weight:bold;
+	padding-bottom:50px;
+	#input{
+		margin-top:30px;
+		#formulaire{
+			width:30%;
+			margin-left:auto;
+			margin-right:auto;
+			input{
+				border:3px black solid;
+			}
+			button{
+				background-color:black;
+				color:white;
+				font-weight:bold;
+				
+			}
+			span{
+				margin-top:4%;
+				
+				
+			}
+		}
+	}
+}
+#RS{
+	background-color:rgb(27,27,27);
+	padding-top:20px;
+	padding-bottom:20px;
+	#icon{
+		width:50%;
+		margin-right:auto;
+		margin-left:auto;
+		text-align:center;
+		a{
+			text-decoration:none;
+		}
+	}
+}
+.row{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+#miw{
+	background-color:black;
+	color:white;
+	font-size:20px;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+@media screen and (max-width:767px){
+	#formulaire{
+		width:100% !important;
+		input{
+			display:block !important;
+			float:none !important;
+			border-radius:5px;
+			width:70%;
+			margin-left:auto;
+			margin-right:auto;
+			border:3px black solid;
+			padding-top:6px;
+			padding-bottom:6px;
+		}
+		button{
+			background-color:black;
+			color:white;
+			border-radius:5px;
+			font-weight:bold;
+			
+		}
+		span{
+			display:block !important;
+			float:none !important;
+			width:60%;
+			margin-top:4%;
+			margin-left:auto;
+			margin-right:auto;
+		}
+	}
+	
+}
+@media screen and (min-width:768px){
+	.photoDL{
+		img{
+			margin-left: 15%;
+		}
+	}
+	
+	#icon{
+		font-size:65px !important;
+		.icon1{
+			text-align:right;
+			padding-right:0px;
+		}
+		.icon2{
+			padding-left:0px;
+			text-align:left;
+		}
+		.slash{
+			font-size:40px !important;
+		}
+	}
+} 
