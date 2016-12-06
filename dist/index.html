@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+		<title>CAPEB</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+		<!-- Optional theme -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+		<link rel="stylesheet" type="text/css" href="../font/flaticon.css">
+		<link rel="stylesheet" id="couleurFeuille" type="text/css" href="styleBlanc.css">
+
+		<script>
+		function changeCouleur(couleur){
+            document.getElementById('couleurFeuille').setAttribute('href','style' + couleur +'.css');
+        }
+		</script>
+	</head>
+	<body>	
+		<select onchange="changeCouleur(this.value)">
+			<option>Blanc</option>
+			<option>Bleu</option>
+			<option>Vert</option>
+			<option>Jaune</option>
+			<option>Rouge</option>
+			<option>Orange</option>
+		</select>
+			<div id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<img id="logo" src="img/img/logo_capeb.png" alt="Logo CAPEB"/>
+								</div>
+							</div>					
+							<div class="row">
+								<div class="col-md-12" id="texte">
+									<div class="row">
+										<p class="col-md-8">Pour votre iPhone ou android, la CAPEB est plus proche de vous à présent: actualités, formations, boites à outils, notifications, etc.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 photoDL">
+									<a href="https://play.google.com/store/apps/details?id=com.websenso.capeb71"><img src="img/img/badge_android.png" alt="photo android téléchargement"/></a>
+								</div>
+								<div class="col-md-4 photoDL">
+									<a href="https://itunes.apple.com/fr/app/capeb-71/id971652081?mt=8"><img src="img/img/badge_apple.png" alt="photo apple téléchargement"/></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6" id="photoIllu">
+							<img src="img/img/capeb_app_screen.png" alt="Apercu de l'application mobile"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="email">
+				<div class="row">
+					<div class="col-md-12">
+						Besoin d'une présentation rapide par email ? Avec plaisir, saisissez votre email et vous recevrez immédiatement un très joli email.
+					</div>
+				</div>
+				<div class="row" id="input">
+						<form class="input-group" id="formulaire">
+							<input type="email" class="form-control" placeholder="Email" required>
+							      <span class="input-group-btn">
+									<button class="btn btn-secondary" type="submit">Recevoir la présentation</button>
+								  </span>
+						</form>
+				</div>
+			</div>
+			<div class="row" id="RS">>
+				<div class="container">
+					<div class="row" id="icon">
+						<div class="col-md-6 icon1">
+							<a title="lien vers le facebook" href="#"><i class="flaticon flaticon-facebook"></i></a>   <span class="slash">/</span>
+							<a title="lien vers le twitter" href="#"><i class="flaticon flaticon-twitter"></i></a>   <span class="slash">/</span>
+						</div>
+						<div class="col-md-6 icon2">
+							<a title="lien vers le contact" href="#"><i class="flaticon flaticon-display"></i></a>   <span class="slash">/</span>
+							<a title="lien vers le flux rss" href="#"><i class="flaticon flaticon-wifi" href="#" data-icon="@"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="miw">
+				<div class="container">
+					<div class="row text-center">
+						MIW©2015
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
